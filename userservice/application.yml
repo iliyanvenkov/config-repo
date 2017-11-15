@@ -11,9 +11,18 @@ spring:
   datasource:
     url: "jdbc:mysql://localhost:3306/itemsharingdatabase"
     username: "root"
-    password: "{cipher}4a6a58e1a8878517ddd60f81b545a0da6f92719d4b7a8da9591980ec797c527e"
+    password: "{cipher}8a588fb72b18ceeb100d2b6c96d297ef1baabe223f6cac339d13a0d3ddc7ebd3"
     testWhileIdle: "true"
     validationQuery: "SELECT 1"
 
 server:
   port: 8081
+
+eureka:
+  instance:
+    perferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
