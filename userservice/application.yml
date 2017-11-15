@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.MySQL5Dialect"
+  database:
+    driverClassName: "com.mysql.jdbc.Driver"
+  datasource:
+    url: "jdbc:mysql://localhost:3306/itemsharingdatabase"
+    username: "root"
+    password: "{cipher}4a6a58e1a8878517ddd60f81b545a0da6f92719d4b7a8da9591980ec797c527e"
+    testWhileIdle: "true"
+    validationQuery: "SELECT 1"
+
+server:
+  port: 8081
