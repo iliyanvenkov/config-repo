@@ -16,7 +16,7 @@ spring:
     validationQuery: "SELECT 1"
 
 server:
-  port: 8082
+  port: 8083
 
 eureka:
   instance:
